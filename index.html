@@ -1,0 +1,59 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Born from Void</title>
+    <link href="https://fonts.googleapis.com/css2?family=Unica+One&family=Orbitron:wght@500&display=swap" rel="stylesheet">
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            width: 100%;
+            overflow: hidden;
+            background-color: black;
+            color: white;
+            font-family: 'Orbitron', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        video {
+            position: fixed;
+            top: 0;
+            left: 0;
+            min-width: 100%;
+            min-height: 100%;
+            object-fit: cover;
+            z-index: -1;
+        }
+        .overlay {
+            z-index: 1;
+            text-align: center;
+            letter-spacing: 0.05em;
+        }
+        .overlay h1 {
+            font-size: 3em;
+            margin: 0 0 0.5em 0;
+            text-transform: uppercase;
+        }
+        .overlay p {
+            font-size: 1em;
+            margin: 0;
+            opacity: 0.85;
+        }
+    </style>
+</head>
+<body>
+    <video autoplay muted loop playsinline>
+        <source src="background.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+    </video>
+    <div class="overlay">
+        <h1>Born from Void</h1>
+        <p>contacts: contact@bornfromvoid.com</p>
+    </div>
+</body>
+</html>
